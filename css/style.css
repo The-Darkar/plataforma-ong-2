@@ -1,0 +1,120 @@
+/* style.css */
+
+:root {
+  --cor-primaria: #004080;
+  --cor-secundaria: #f9f9f9;
+  --cor-acento: #e60000;
+  --cor-texto: #222;
+  --cor-texto-claro: #fff;
+  --esp-8: 8px;
+  --esp-16: 16px;
+  --esp-24: 24px;
+  --esp-32: 32px;
+  --esp-48: 48px;
+  --esp-64: 64px;
+  --fonte-xs: 12px;
+  --fonte-sm: 14px;
+  --fonte-md: 16px;
+  --fonte-lg: 20px;
+  --fonte-xl: 24px;
+  --fonte-xxl: 32px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--cor-secundaria);
+  color: var(--cor-texto);
+}
+
+/* Header e footer */
+header, footer {
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  padding: var(--esp-16);
+  text-align: center;
+}
+
+/* Navegação */
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  margin: 0 var(--esp-16);
+}
+
+nav ul li a {
+  color: var(--cor-texto-claro);
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main */
+main {
+  padding: var(--esp-16);
+}
+
+/* Formulário */
+form {
+  max-width: 600px;
+  margin: auto;
+  padding: var(--esp-16);
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* Imagens */
+img {
+  width: 100%;
+  max-width: 600px;
+  height: 400px;
+  object-fit: cover;
+  display: block;
+  margin: var(--esp-16) auto;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  img {
+    max-width: 90%;
+    height: auto;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+}
+
+/* Botões */
+button {
+  padding: var(--esp-8) var(--esp-16);
+  background-color: var(--cor-primaria);
+  color: var(--cor-texto-claro);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: var(--cor-acento);
+}
+
+/* Cards */
+.card {
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: var(--esp-16);
+  margin-bottom: var(--esp-16);
+  background-color: #fff;
+}
